@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d6efd">
+  <meta name="description" content="Movi-Pass: proyecto universitario de gestión de cooperativas y buses. Presentación de Alina Ortiz.">
+  <title>Movi-Pass | Alina Ortiz</title>
+  <style>
+    :root{--azul:#0d6efd;--marino:#0b1c3b;--claro:#eef5ff;--texto:#25334a;--blanco:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--texto);background:#f7faff;line-height:1.6}
+    a{text-decoration:none} .contenedor{width:min(1080px,90%);margin:auto}
+    header{background:#fff;box-shadow:0 2px 16px #14335e12;position:sticky;top:0;z-index:10}
+    .nav{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:72px;flex-wrap:wrap;padding:12px 0}
+    .marca{font-size:1.5rem;font-weight:850;color:var(--azul)}.marca span{color:var(--marino)}
+    nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:var(--texto);font-weight:650;font-size:.95rem}nav a:hover{color:var(--azul)}
+    .hero{background:linear-gradient(125deg,#071b3e,#0d6efd);color:#fff;padding:94px 0 100px;text-align:center;position:relative;overflow:hidden}
+    .hero::after{content:"";position:absolute;width:330px;height:330px;border:60px solid #ffffff0e;border-radius:50%;right:-135px;top:-150px}
+    .etiqueta{display:inline-block;background:#ffffff25;border:1px solid #ffffff42;padding:6px 16px;border-radius:99px;font-weight:600;letter-spacing:.03em}
+    h1{font-size:clamp(3rem,9vw,5.5rem);margin:14px 0 8px;letter-spacing:-.06em;line-height:1.12}
+    .hero p{max-width:700px;margin:0 auto 27px;color:#e8f0ff;font-size:1.12rem}
+    .botones{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 21px;border-radius:11px;font-weight:750;transition:transform .2s,background .2s}
+    .btn:hover{transform:translateY(-2px)}.btn-blanco{background:white;color:#0959d1}.btn-borde{border:1px solid #ffffffa0;color:white}
+    section{padding:70px 0}h2{font-size:clamp(1.65rem,4vw,2.2rem);margin:0 0 14px;color:var(--marino)}
+    .subtitulo{color:#60728a;margin:0 0 30px;max-width:720px}
+    .cuadricula{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+    .tarjeta{background:#fff;border:1px solid #e1eafa;border-radius:17px;padding:26px;box-shadow:0 9px 30px #14335e0a}
+    .icono{font-size:2rem}.tarjeta h3{margin:12px 0 7px;color:#18335a}.tarjeta p{margin:0;color:#617189}
+    .fondo{background:#eef5ff}.chips{display:flex;flex-wrap:wrap;gap:11px}.chip{background:#fff;border:1px solid #cddfff;border-radius:99px;padding:9px 16px;font-weight:700;color:#1954a1}
+    .autor{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.avatar{width:84px;height:84px;border-radius:20px;background:#dbeafe;display:grid;place-items:center;font-size:2rem;color:#0d6efd;font-weight:900}
+    .autor h3{margin:0;color:#153765;font-size:1.45rem}.autor p{margin:4px 0}
+    .aviso{margin-top:24px;border-left:4px solid var(--azul);padding:13px 16px;background:#fff;border-radius:8px;color:#526680}
+    footer{background:#0b1c3b;color:#d7e7ff;text-align:center;padding:27px 15px}footer a{color:#fff;text-decoration:underline}
+    @media(max-width:760px){.cuadricula{grid-template-columns:1fr}.nav{justify-content:center}.hero{padding:75px 0}section{padding:52px 0}nav{justify-content:center}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="contenedor nav">
+      <a class="marca" href="#inicio">Movi<span>Pass</span> 🚌</a>
+      <nav aria-label="Navegación principal">
+        <a href="#acerca">Acerca del proyecto</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#tecnologias">Tecnologías</a>
+        <a href="#autora">Autora</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="contenedor">
+        <span class="etiqueta">🚧 Proyecto universitario en desarrollo</span>
+        <h1>MoviPass 🚌</h1>
+        <p>Una propuesta digital para organizar la información de cooperativas de transporte, buses y sus servicios de forma clara y sencilla.</p>
+        <div class="botones">
+          <a class="btn btn-blanco" href="#funciones">Conoce el proyecto</a>
+          <a class="btn btn-borde" href="https://github.com/Ali-20-l/Movi-Pass" target="_blank" rel="noopener noreferrer">Ver mi repositorio ↗</a>
+        </div>
+      </div>
+    </section>
+    <section id="acerca">
+      <div class="contenedor">
+        <h2>💡 ¿Qué es MoviPass?</h2>
+        <p class="subtitulo">MoviPass es un proyecto web desarrollado de manera colaborativa en el ámbito universitario. Busca facilitar la gestión de cooperativas, unidades de transporte y funcionalidades relacionadas con los buses. Esta página presenta el trabajo; no es el sistema completo.</p>
+        <div class="tarjeta"><strong>🎯 Objetivo:</strong> desarrollar una interfaz fácil de utilizar y conectarla con servicios que permitan administrar la información del transporte de manera organizada.</div>
+      </div>
+    </section>
+    <section class="fondo" id="funciones">
+      <div class="contenedor">
+        <h2>✨ Funcionalidades del proyecto</h2>
+        <p class="subtitulo">Áreas en las que trabaja el equipo; algunas todavía están en desarrollo.</p>
+        <div class="cuadricula">
+          <article class="tarjeta"><div class="icono">🏢</div><h3>Cooperativas</h3><p>Interfaces para registrar, consultar, editar y eliminar información de cooperativas.</p></article>
+          <article class="tarjeta"><div class="icono">🚌</div><h3>Buses</h3><p>Gestión de datos de unidades, como placa, tipo de bus, chasis y carrocería.</p></article>
+          <article class="tarjeta"><div class="icono">💺</div><h3>Asientos</h3><p>Diseño de distribuciones de asientos para buses de uno y dos pisos, con categorías normales y VIP donde corresponda.</p></article>
+        </div>
+      </div>
+    </section>
+    <section id="tecnologias">
+      <div class="contenedor">
+        <h2>🛠️ Tecnologías y herramientas</h2>
+        <p class="subtitulo">Herramientas usadas para desarrollar y organizar el proyecto.</p>
+        <div class="chips"><span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span><span class="chip">Bootstrap</span><span class="chip">Supabase</span><span class="chip">Git</span><span class="chip">GitHub</span></div>
+        <p class="aviso">La base de datos y la lógica del proyecto se trabajan en el repositorio colaborativo. Esta página estática no necesita credenciales ni claves de Supabase.</p>
+      </div>
+    </section>
+    <section class="fondo" id="autora">
+      <div class="contenedor">
+        <h2>👩‍💻 Mi participación</h2>
+        <div class="tarjeta autor">
+          <div class="avatar" aria-hidden="true">AO</div>
+          <div><h3>Alina Ortiz</h3><p>Estudiante de Ingeniería de Software</p><p>Universidad Técnica de Ambato · Ecuador 🇪🇨</p></div>
+        </div>
+        <p>He colaborado en la interfaz de cooperativas, su integración con Supabase y el diseño de pantallas relacionadas con buses y asientos. El desarrollo se organiza mediante ramas, issues y pull requests en GitHub.</p>
+        <div class="botones" style="justify-content:flex-start"><a class="btn btn-blanco" style="background:#0d6efd;color:white" href="https://github.com/Ali-20-l" target="_blank" rel="noopener noreferrer">Mi perfil de GitHub ↗</a></div>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 · MoviPass · Presentación de Alina Ortiz · <a href="https://github.com/Ali-20-l/Movi-Pass">GitHub</a></footer>
+</body>
+</html>
